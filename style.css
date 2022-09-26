@@ -2,8 +2,12 @@
   display: none;
 }
 
-.first-img-card {
-  margin-top: -14px;
+.card-footer {
+  text-align: center;
+}
+
+.card {
+  border: none;
 }
 
 .logo {
