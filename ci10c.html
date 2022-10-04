@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="icon" type="image/jpg" href="images/favicon.jpg">
+    <link href="style.css" rel="stylesheet">
+
+    <title>Glory Helper</title>
+</head>
+
+<body>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">CI-10</li>
+        </ol>
+    </nav>
+
+    <div class="logo">
+        <img src="images/logo.jpg">
+        <h1 class="display-4">CI-10</h1>
+    </div>
+
+    <div class="container" style="margin-bottom: 40px;">
+
+        <div class="accordion" id="accordionExample">
+
+            <!-- Error Codes -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Error Codes
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Error Codes.."
+                            title="Type in a name">
+
+                        <table id="myTable">
+                            <tr class="header">
+                                <th style="width:40%;">Code</th>
+                                <th style="width:60%;">Description</th>
+                            </tr>
+                            <tr>
+                                <td>0101</td>
+                                <td> Abnormal rotation of drive motor
+                                    for feeding belt (SMA01)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0102</td>
+                                <td>Reservation</td>
+                            </tr>
+                            <tr>
+                                <td>0103</td>
+                                <td>Feed Failure</td>
+                            </tr>
+                            <tr>
+                                <td>0121</td>
+                                <td>Remaining banknotes
+                                    (PSA02LL/PSA02LR/
+                                    PSA02RL/PSA02RR)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0131</td>
+                                <td> Unexpected sensor blocking
+                                    (PSA03L/PSA03R)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0201</td>
+                                <td>Abnormal rotation of transport
+                                    motor 1 (BMC01)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0202</td>
+                                <td> Abnormal rotation of transport
+                                    motor 2 (BMC02)</td>
+                            </tr>
+                            <tr>
+                                <td>0204</td>
+                                <td> Abnormal rotation of Drive Motor
+                                    for 3-way diverter 1 (SMC01)</td>
+                            </tr>
+                            <tr>
+                                <td>0205</td>
+                                <td> Abnormal rotation of Drive Motor
+                                    for 3-way diverter 2 (SMC0)</td>
+                            </tr>
+                            <tr>
+                                <td>0206</td>
+                                <td> Abnormal rotation of Drive Motor
+                                    for 3-way diverter 3 (SMC03)
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>0231</td>
+                                <td> Unexpected sensor blocking 
+                                    (PSC01)                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0232</td>
+                                <td> Unexpected sensor blocking 
+                                    (PSC02)                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0233</td>
+                                <td> Unexpected sensor blocking 
+                                    (PSC05)                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0301</td>
+                                <td> Jam Between sensors PSA03 - PSC01                                   
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0302</td>
+                                <td> Jam Between sensors PSA01 - PSC02                                   
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0303</td>
+                                <td> Jam Between sensors PSA02 - PSC03                                   
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0304</td>
+                                <td> Jam Between sensors PSA02 - PSC05                                   
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0305</td>
+                                <td> Jam Between sensors  PSC01 - PSG11                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0306</td>
+                                <td> Jam Between sensors  PSC01 - PSG21                                     
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0307</td>
+                                <td> Jam Between sensors  PSC02 - PSG31                                      
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0308</td>
+                                <td> Jam Between sensors   PSG11 - PSC02                                      
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0309</td>
+                                <td> Jam Between sensors   PSG21 - PSC02                                     
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>030A</td>
+                                <td> Jam Between sensors   PSG31 - PSC03                                      
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>030B</td>
+                                <td> Jam Between sensors   PSG31 - PSC05                                      
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0321</td>
+                                <td> (Reservation)                                      
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0322</td>
+                                <td> (Reservation)                                      
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0331</td>
+                                <td>  Extremely long length of banknote                                     
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0332</td>
+                                <td>   Extremely short length of banknote                                     
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0341</td>
+                                <td>   Extremely short length of banknote                                     
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0342</td>
+                                <td>   No. processed by main body < No. 
+                                    processed by BV                                     
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0351</td>
+                                <td>   Excess the limit number of 
+                                    banknotes                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0361</td>
+                                <td>   Detection of Category 2 banknotes                                     
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0362</td>
+                                <td>    Detection of Category 3 banknotes                                     
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0371</td>
+                                <td>    Transport clear Over the limit of retry                                                                        
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0401</td>
+                                <td>    Shutter closing failure                                                                        
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0402</td>
+                                <td>    Shutter opening failure                                                                         
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0431</td>
+                                <td>    Unexpected sensor blocking (PSC03) 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2001</td>
+                                <td>    Unexpected sensor blocking (PSC03) 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2001</td>
+                                <td>    Recognition unit communication error: detected by main body 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2002</td>
+                                <td>    Recognition unit communication error: detected by main body 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2003</td>
+                                <td>    Recognition unit communication error: detected by main body, BCC error 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2004</td>
+                                <td>    Recognition unit communication error: detected by main body 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2005</td>
+                                <td>    Recognition unit communication error: detected by main body 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2006</td>
+                                <td>    Recognition unit communication error: detected by main body, command mismatch 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2007</td>
+                                <td>    Recognition unit communication error: detected by main body 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2008</td>
+                                <td>    Recognition unit communication error: detected by main body, overrun error
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2009</td>
+                                <td>    Recognition unit communication error: detected by main body, Parity error
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>200A</td>
+                                <td>    Recognition unit communication error: detected by main body, Framing error
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2011</td>
+                                <td>    Recognition unit communication error: detected by recognition unit, Vertical parity error
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2012</td>
+                                <td>    Recognition unit communication error: detected by recognition unit, Horizontal parity error
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8131, 8231, 8331</td>
+                                <td>     Unexpectedly blocked Transport 
+                                    sensor of stacker(PSGx1)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8141, 8241, 8341</td>
+                                <td>     Remaining banknotes on the 
+                                    Transport sensor of stacker
+                                    (PSGx1)
+                                </td>
+                            </tr>
+                            
+                        </table>
+
+
+                    </div>
+                </div>
+            </div><!-- Error codes -->
+
+            <!-- RAS -->
+            <div class=" accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        RAS Commands
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>How to enter RAS
+                        </p>
+                        <ol>
+                            <li>Button 1 will increment the display figure in multiples of 10.</li>
+                            <li>Button 2 increments the figure by 1.</li>
+                            <li>Button 3 will enter/start the command.</li>
+                            <li>Press buttons 1&2 together to clear the command.</li>
+                            <li>Operate buttons 1&2 to display the code FF.</li>
+                            <li>Press button 3 and Co00 should be displayed.</li>
+
+                        </ol>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Operation</th>
+                                    <th scope="col">RAS Code</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Reset Machine</td>
+                                    <td>0701</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Transport</td>
+                                    <td>0B01</td>
+                                </tr>
+                                <tr>
+                                    <td>Empty to Output</td>
+                                    <td>0398</td>
+                                </tr>
+                                <tr>
+                                    <td>Empty to Collection Cassette</td>
+                                    <td>0399</td>
+                                </tr>
+                                <tr>
+                                    <td>Log Collection</td>
+                                    <td>35</td>
+                                </tr>
+                                <tr>
+                                    <td>Load Template</td>
+                                    <td>9802</td>
+                                </tr>
+                                <tr>
+                                    <td>Calibrate all Sensors</td>
+                                    <td>6100</td>
+                                </tr>
+                                <tr>
+                                    <td>Clear Memory</td>
+                                    <td>9099</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div><!-- End RAS -->
+
+            <!-- Moduke replacement -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Module Replacements
+                    </button>
+                </h2>
+
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+
+                    <div class="accordion-body">
+
+                        <div class="row mt10">
+
+                            <h6>Operational Cover</h6>
+                            <p>Firstly, use the yellow dot key to unlock and remove the Collection Box.
+                                Next use the red dot key to unlock and rack out the main machine.</p>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/oc1.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 1</h5>
+                                        <p class="card-text">Undo the 2 screws
+                                            indicated and remove the
+                                            metal cover.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/oc2.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 2</h5>
+                                        <p class="card-text">With the cover removed, unplug connectors K11, 12 &
+                                            13.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/oc3.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 3</h5>
+                                        <p class="card-text">The cover is secured in place by 4 screws; 1 on the
+                                            left-hand side.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt10">
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/oc4.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 4</h5>
+                                        <p class="card-text">2 on the right-hand side.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/oc5.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 5</h5>
+                                        <p class="card-text">1 on the front of the machine.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/oc6.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 6</h5>
+                                        <p class="card-text">Slide the cover forward & off.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt10">
+
+                            <h6>Feed Unit</h6>
+                            <p>The Operational Cover Unit must be removed first.</p>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/fu1.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 1</h5>
+                                        <p class="card-text">On the left-hand side, loosen 2 screws and push up tension
+                                            plate to loosen the belt then remove it.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/fu2.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 2</h5>
+                                        <p class="card-text">On the right-hand side, undo the 2 screws indicated and
+                                            remove the CPU board cover.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/fu3.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 3</h5>
+                                        <p class="card-text">Above the CBU board, carefully undo the 2 screws and remove
+                                            the metal silver bracket.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt10">
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/fu4.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 4</h5>
+                                        <p class="card-text">Remove the black screw and the USB restraining
+                                            bracket.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/fu5.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 5</h5>
+                                        <p class="card-text">Unplug the micro-USB connector U1 and the power connector
+                                            J2</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/fu6.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 6</h5>
+                                        <p class="card-text">Open the 7 cable clamps and unplug the connectors A1 & A2.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt10">
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/fu7.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 7</h5>
+                                        <p class="card-text">Pull A1, A2 cable looms, out
+                                            of the cable clamps.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/fu8.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 8</h5>
+                                        <p class="card-text">Undo the 2 screws indicated on the right-hand side.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/fu9.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 9</h5>
+                                        <p class="card-text">Then undo the 2 screws on the left-hand side.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt10">
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/fu10.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 10</h5>
+                                        <p class="card-text">Undo the clamp that secures the top of the BV in place as
+                                            this makes the removal of the feed unit easier.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/fu11.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 11</h5>
+                                        <p class="card-text">Lift the feed unit clear of the
+                                            machine, do not to damage A1, A2 cable looms on the right-hand
+                                            side.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+
+                            </div>
+
+                        </div>
+
+                        <div class="row mt10">
+
+                            <h6>BV Unit</h6>
+                            <p></p>
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/bv1.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 1</h5>
+                                        <p class="card-text">Unplug connector C7 from the right-hand side of the unit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/bv2.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 2</h5>
+                                        <p class="card-text">Undo the screw indicated and release the locking bar.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/bv3.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 3</h5>
+                                        <p class="card-text">Undo the 2 black screws on the
+                                            right-hand side.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt10">
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/bv4.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 4</h5>
+                                        <p class="card-text">Undo the single black screw on the left-hand side of the
+                                            unit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/bv5.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 5</h5>
+                                        <p class="card-text">Carefully lift and remove the unit from the machine.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+
+                            </div>
+
+                        </div>
+
+                        <div class="row mt10">
+
+                            <h6>Stacker Units</h6>
+                            <p>Please note: After the stackers have been removed, any stacker that contain cash, must
+                                be fitted in its original location. </p>
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/s1.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 1</h5>
+                                        <p class="card-text">Remove the black screw and the USB restraining bracket.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/s2.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 2</h5>
+                                        <p class="card-text">Unplug the micro-USB connector U1 and the power connector
+                                            J2.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/s3.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 3</h5>
+                                        <p class="card-text">Remove 3 black screws, move the
+                                            cable and plate out of the way.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt10">
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/s4.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 4</h5>
+                                        <p class="card-text">Remove 2 black screws and move metal plate from
+                                            the machine.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/s5.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 5</h5>
+                                        <p class="card-text">Unplug the 6 cable connectors G11, G12, G21, G22, G31 &
+                                            G32.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/s6.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 6</h5>
+                                        <p class="card-text">Undo the 5 black screws and remove the stacker fixing
+                                            plate.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt10">
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/s7.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 7</h5>
+                                        <p class="card-text">On the left-hand side undo the 3 black screws and the 3
+                                            plates.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/s8.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 8</h5>
+                                        <p class="card-text">Remove the 6 screws indicated that secure the stackers in
+                                            place.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/s9.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 9</h5>
+                                        <p class="card-text">Pull out stacker 1 first from the rear, then 2, lastly 3.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt10">
+
+                            <h6>Transport Unit</h6>
+                            <p>Prior to removing the Transport Unit, it is necessary to remove the following units:<br>
+                                - The Collection Box<br>
+                                - Operational Cover Unit<br>
+                                - Feed Transport Unit<br>
+                                - Recognition Unit (BV)<br>
+                                - All Stacker Units<br>
+                                Unlike other CI products, the CI-5B only has one transport unit as opposed separate
+                                upper and lower transport units.
+                                Before removing the transport unit, it is advised to take a photo of the cable routing
+                                to the CPU board to assist when refitting the cables.
+                            </p>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/t1.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 1</h5>
+                                        <p class="card-text">The first step is to loosen the 2 screws indicated and the
+                                            tensioner bracket will drop allowing the timing belt to be removed. Then
+                                            carefully unplug connector J11.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/t2.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 2</h5>
+                                        <p class="card-text">On the right-hand side, open all the white
+                                            and black cable clamps that secure the cable looms.
+                                            Unplug all the connectors and the connector indicated in
+                                            yellow.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt10">
+                            <p>On the right-hand side of the machine, the motor cover needs to be removed. This cover is
+                                secured in place by 3 screws.</p>
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/t3.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 3</h5>
+                                        <p class="card-text">1 at the rear and 1 on the top. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/t4.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 4</h5>
+                                        <p class="card-text">1 at the left-hand side. 3 screws and remove the cover
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="row mt10">
+
+                            <p>The Transport Unit is secured in place by 4 black screws.</p>
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/t5.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 5</h5>
+                                        <p class="card-text">One at the front left-hand side.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/t6.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 6</h5>
+                                        <p class="card-text">One at the front right-hand side.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/t7.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 7</h5>
+                                        <p class="card-text">One at the rear left-hand side.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="card p-card">
+                                    <img class="card-img-top" src="images/t8.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Step 8</h5>
+                                        <p class="card-text">One at the rear right-hand side.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p style="margin-top:20px;">With the 4 screws removed, it is now possible to lift the
+                                Transport Unit free from the chassis <span style="color: red;">take care not to snag any
+                                    of the cables that come away with the unit.</span></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--End Accordian Body-->
+            </div>
+        </div><!-- End Moduke Replacements-->
+
+        <!-- Part Numnbers -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Part Numbers
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Part Name</th>
+                                <th scope="col">Part Number</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>FEED TRANSPORT UNIT</td>
+                                <td>UNK0A0000Y0</td>
+                            </tr>
+                            <tr>
+                                <td>OPERATION COVER UNIT</td>
+                                <td>UNK0K0000Y0</td>
+                            </tr>
+                            <tr>
+                                <td>COLLECTION CASSETTE</td>
+                                <td>UNK0F5000Y0</td>
+                            </tr>
+                            <tr>
+                                <td>RECOGNITION UNIT</td>
+                                <td>UNK0B1000Y0</td>
+                            </tr>
+                            <tr>
+                                <td>STACKER UNIT</td>
+                                <td>UNK0G0000Y0</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+            </div>
+        </div><!-- End Part Numbers -->
+
+        <!-- Senor Diagram -->
+        <div class="accordion-item">
+
+            <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Sensor Diagram
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingF"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <img src="images/sensors.jpg" style="width: 100%;">
+                </div>
+            </div>
+        </div><!-- End Senor diagram -->
+
+    </div> <!-- End Accordion -->
+
+    </div> <!-- End Container -->
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
