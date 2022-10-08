@@ -2,6 +2,41 @@
   display: none;
 }
 
+.accord-blue {
+
+    background-color: blue!important;
+    color: white!important;
+
+}
+
+.accord-lightgrey {
+
+  background-color: lightgray!important;
+  color: black!important;
+
+}
+
+.accord-lightgreen {
+
+  background-color: lightgreen!important;
+  color: black!important;
+
+}
+
+.accord-navy {
+
+  background-color: navy!important;
+  color: white!important;
+
+}
+
+.accord-samon {
+
+  background-color: lightsalmon!important;
+  color: black!important;
+
+}
+
 .card-footer {
   text-align: center;
 }
