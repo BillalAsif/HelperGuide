@@ -37,6 +37,11 @@
 
 }
 
+.sensor-h5 {
+  text-align: center;
+  margin: 40px 0px;
+  font-weight: bold;
+}
 .card-footer {
   text-align: center;
 }
