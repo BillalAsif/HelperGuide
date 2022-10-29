@@ -4,43 +4,43 @@
 
 .accord-blue {
 
-    background-color: blue!important;
-    color: white!important;
+  background-color: blue !important;
+  color: white !important;
 
 }
 
 .accord-lightgrey {
 
-  background-color: lightgray!important;
-  color: black!important;
+  background-color: lightgray !important;
+  color: black !important;
 
 }
 
 .accord-lightgreen {
 
-  background-color: lightgreen!important;
-  color: black!important;
+  background-color: lightgreen !important;
+  color: black !important;
 
 }
 
 .accord-navy {
 
-  background-color: blueviolet!important;
-  color: black!important;
+  background-color: blueviolet !important;
+  color: black !important;
 
 }
 
 .accord-samon {
 
-  background-color: lightsalmon!important;
-  color: black!important;
+  background-color: lightsalmon !important;
+  color: black !important;
 
 }
 
 .accord-brown {
 
-  background-color: rgb(187, 80, 80)!important;
-  color: black!important;
+  background-color: rgb(187, 80, 80) !important;
+  color: black !important;
 
 }
 
@@ -95,6 +95,10 @@
 
 .mt10 {
   margin-top: 20px;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 #myInput {
